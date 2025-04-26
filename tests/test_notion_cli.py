@@ -1,13 +1,11 @@
 # tests/test_notion_cli.py
-import os
-import dotenv
-
 import pytest
 from src.env_loader import load_env
 from src.notion_client import fetch_notion_data
 from src.response_parser import (
     extract_titles_from_response,
     extract_select_from_response,
+    extract_titles_and_selects_from_response,
 )
 import requests
 
@@ -181,6 +179,15 @@ def test_extract_titles_from_response(some_data):
 
 
 def test_extract_select_from_response(some_data):
-    except_selects = ["SAMPLE", "サンプル"]
+    expect_selects = ["SAMPLE", "サンプル"]
     result = extract_select_from_response(some_data)
-    assert result == except_selects
+    assert result == expect_selects
+
+
+def test_extract_titles_and_selects_from_response(some_data):
+    expect_title_and_select = [
+        {"title": "Sample Task 1", "select": "SAMPLE"},
+        {"title": "Sample Task 2", "select": "サンプル"},
+    ]
+    result = extract_titles_and_selects_from_response(some_data)
+    assert result == expect_title_and_select
