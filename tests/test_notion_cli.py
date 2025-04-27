@@ -18,7 +18,7 @@ def some_data():
             {
                 "properties": {
                     "テキスト": {
-                        "id": "IR%60%5B",
+                        "id": "xxxxx",
                         "type": "rich_text",
                         "rich_text": [
                             {
@@ -38,10 +38,10 @@ def some_data():
                         ],
                     },
                     "セレクト": {
-                        "id": "eDPn",
+                        "id": "xxxxx",
                         "type": "select",
                         "select": {
-                            "id": "5cf50c80-b4cf-409c-9a70-14882d39e215",
+                            "id": "xxxxx",
                             "name": "SAMPLE",
                             "color": "purple",
                         },
@@ -71,7 +71,7 @@ def some_data():
             {
                 "properties": {
                     "テキスト": {
-                        "id": "IR%60%5B",
+                        "id": "xxxxx",
                         "type": "rich_text",
                         "rich_text": [
                             {
@@ -91,9 +91,9 @@ def some_data():
                         ],
                     },
                     "セレクト": {
-                        "id": "eDPn",
+                        "id": "xxxxx",
                         "type": "select",
-                        "select": {"id": "E;|p", "name": "サンプル", "color": "blue"},
+                        "select": {"id": "xxxxx", "name": "サンプル", "color": "blue"},
                     },
                     "Name": {
                         "id": "title",
